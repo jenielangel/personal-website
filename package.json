@@ -1,15 +1,33 @@
 {
   "name": "angel-personal-website",
-  "version": "0.1.0",
+  "description": "A modern, responsive personal portfolio showcasing projects and skills",
+  "version": "2.0.0",
   "private": true,
+  "author": "Angel",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "serve": "http-server . -p 3000",
+    "static-serve": "python -m http.server 8000"
   },
+  "keywords": [
+    "portfolio",
+    "student",
+    "projects",
+    "web development",
+    "creative"
+  ],
   "dependencies": {
     "next": "^14.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
