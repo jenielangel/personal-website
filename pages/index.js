@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { useEffect } from 'react'
-import styles from '../styles/styles.css'
 
 export default function Home() {
   useEffect(() => {
