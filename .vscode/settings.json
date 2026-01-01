@@ -1,13 +1,8 @@
 {
-  // ==================================
-  // TERMINAL CONFIGURATION
-  // ==================================
-  // Use Command Prompt instead of PowerShell
-  // This fixes npm command issues in VS Code terminal
   "terminal.integrated.defaultProfile.windows": "Command Prompt",
   "terminal.integrated.profiles.windows": {
     "Command Prompt": {
-      "path": ["${env:windir}\\System32\\cmd.exe"],
+      "path": "${env:windir}\\System32\\cmd.exe",
       "icon": "terminal-cmd"
     },
     "PowerShell": {
@@ -15,58 +10,29 @@
       "icon": "terminal-powershell"
     }
   },
-  
-  // ==================================
-  // FILE ASSOCIATIONS
-  // ==================================
   "files.defaultLanguage": "javascript",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  
-  // ==================================
-  // GIT CONFIGURATION
-  // ==================================
-  // Don't show Git warning messages
+  "editor.formatOnSave": false,
   "git.ignoreLimitWarning": true,
-  
-  // ==================================
-  // EDITOR PREFERENCES
-  // ==================================
   "editor.fontSize": 14,
   "editor.fontFamily": "'Courier New', Courier, monospace",
   "editor.wordWrap": "on",
   "editor.insertSpaces": true,
   "editor.tabSize": 2,
   "editor.trimAutoWhitespace": true,
-  
-  // ==================================
-  // EXTENSION SETTINGS
-  // ==================================
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": false
   },
   "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": false
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": false
   },
-  
-  // ==================================
-  // SEARCH & EXCLUDE
-  // ==================================
   "search.exclude": {
     "**/node_modules": true,
     "**/.next": true,
     "**/dist": true
   },
-  
-  // ==================================
-  // FILE EXPLORER
-  // ==================================
   "explorer.excludeGitIgnore": true,
   "files.watcherExclude": {
     "**/.git/objects/**": true,
